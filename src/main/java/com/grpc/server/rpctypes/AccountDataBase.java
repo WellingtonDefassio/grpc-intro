@@ -1,4 +1,4 @@
-package com.grpc.server;
+package com.grpc.server.rpctypes;
 
 import java.util.Map;
 import java.util.function.Function;

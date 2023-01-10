@@ -1,4 +1,4 @@
-package com.grpc.client;
+package com.grpc.client.rpctypes;
 
 import br.grpc.models.Balance;
 import io.grpc.stub.StreamObserver;

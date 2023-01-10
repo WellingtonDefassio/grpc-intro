@@ -1,4 +1,4 @@
-package com.grpc.client;
+package com.grpc.client.rpctypes;
 
 import br.grpc.models.Money;
 import io.grpc.stub.StreamObserver;

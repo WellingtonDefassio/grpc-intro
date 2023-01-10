@@ -1,4 +1,4 @@
-package com.grpc.server;
+package com.grpc.server.rpctypes;
 
 import br.grpc.models.Balance;
 import br.grpc.models.DepositRequest;

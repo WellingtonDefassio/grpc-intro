@@ -1,4 +1,4 @@
-package com.grpc.server;
+package com.grpc.server.rpctypes;
 
 import br.grpc.models.Account;
 import br.grpc.models.TransferRequest;
