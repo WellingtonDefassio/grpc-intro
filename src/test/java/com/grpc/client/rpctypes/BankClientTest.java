@@ -19,7 +19,7 @@ public class BankClientTest {
 
     @BeforeAll
     public void setup() {
-        ManagedChannel managedChannel = ManagedChannelBuilder.forAddress("localhost", 9090)
+        ManagedChannel managedChannel = ManagedChannelBuilder.forAddress("localhost", 9096)
                 .usePlaintext()
                 .build();
         this.blockingStub = BankServiceGrpc.newBlockingStub(managedChannel);
@@ -52,7 +52,7 @@ public class BankClientTest {
         CountDownLatch latch = new CountDownLatch(1);
         WithdrawRequest withdrawRequest = WithdrawRequest.newBuilder()
                 .setAccountNumber(10)
-                .setAmount(60)
+                .setAmount(10)
                 .build();
 
         this.bankServiceStub.withdraw(withdrawRequest, new MoneyStreamingResponse(latch));
